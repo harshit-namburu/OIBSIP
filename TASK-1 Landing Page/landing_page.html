@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creative Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            background-image: url('nature.jpg');
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        #header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 80px;
+            top: 0;
+            left:0; 
+            
+        }
+
+        #navbar{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        #navbar li{
+            list-style: none;
+            padding : 0 20px;
+            position: relative;
+
+        }
+
+        #navbar li a{
+            text-decoration: none;
+            font-size:16px;
+            font-weight:600;
+            color: black;
+            transition: 0.3s ease;
+
+        }
+
+        #navbar li a.active::after,
+        #navbar li a:hover::after{
+            content: "";
+            width:60%;
+            height: 2px;
+            background: black;
+            position: absolute;
+            bottom: -4px;
+            left:20px;
+        }
+
+        button.white{
+            font-size: 13px;
+            font-weight: 600;
+            padding:11px 18px;
+            color:black;
+            background-color: transparent;
+            cursor: pointer;
+            border: 1px solid black;
+            outline: none;
+            transition: 0.2s;
+        }
+
+        button:hover{
+            background: black;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .logo{
+            font-size:20px;
+            font-weight:600;
+            color: black;
+        }
+
+        .footer .socials {
+          margin-top: 75px;
+          margin-bottom: 2px;
+      }
+
+      .socials a {
+          padding: 14px;
+      }
+
+      .socials img {
+          cursor: pointer;
+      }
+
+      #p1,#p2{
+        color: #EDEDED;
+    }
+
+    
+    .cta-btn {
+        display: inline-block;
+        padding: 12px 24px;
+        font-size: 18px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+    
+    .cta-btn:hover {
+        background-color: #45a049;
+    }
+    
+    .image-container {
+        margin-top: 50px;
+    }
+    
+    .image-container img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+
+        <section id="header">
+            <div class="logo">
+                HI-TEC
+            </div>
+            
+            <div>
+                <ul id="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Best Offer</a></li>
+                    <li><a href="#">Contact</a></li>
+                    
+                </ul>
+            </div>
+            <div class="register">
+                <button class="white">Register</button>
+            </div>
+        </section>
+
+        <h1>HI-TEC Printing Solutions</h1>
+        <p>Welcome to HI-TEC Printing Solutions, your one-stop shop for all your digital and offset printing needs.</p>
+        
+        <a class="cta-btn" href="#">Get Started</a>
+        <div class="image-container">
+            <img src="machine.png" alt="Creative Image">
+        </div>
+
+        <p id="p1">We offer high-quality printing services with a focus on precision and efficiency. Whether you need business cards, brochures, flyers, or customized marketing materials, we've got you covered.</p>
+        <p id="p2">Our team of experienced professionals utilizes the latest printing technology to ensure that your prints come out crisp, vibrant, and true to your design.</p>
+    </div>
+    <div class="socials" align="center">
+        <a href="#"><img src="icon-facebook.svg" alt="facebook link"></a>
+        <a href="#"><img src="icon-instagram.svg" alt="instagram link"></a>
+        <a href="#"><img src="icon-twitter.svg" alt="twitter link"></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 36px;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin-top: 30px;
+            animation: fade-in 1s ease;
+        }
+        
+        .image-container img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+            animation: slide-up 1s ease;
+        }
+        
+        .contact-info p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .menu {
+            text-align: right;
+            margin-top: 50px;
+        }
+        
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .menu ul li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        .menu ul li a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .menu ul li a:hover {
+            background-color: #45a049;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+        }
+        
+        .section {
+            margin-top: 50px;
+            animation: slide-up 1s ease;
+        }
+        
+        .section h2 {
+            font-size: 24px;
+        }
+        
+        .section p {
+            font-size: 16px;
+        }
+        
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #000000;
+        }
+
+        .footer .socials {
+          margin-top: 75px;
+          margin-bottom: 2px;
+      }
+
+      .socials a {
+          padding: 14px;
+      }
+
+      .socials img {
+          cursor: pointer;
+      }
+
+      
+
+      @keyframes slide-up {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+</style>
+</head>
+<body style="background-color: #ADD8E6">
+    <div class="container">
+        <div class="header">
+            <h1>My Portfolio</h1>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section" id="home">
+            <p>Hi There!!</p>
+            <p>Welcome to my portfolio website. Here you can explore my projects and skills.</p>
+            
+            
+            <div class="image-container">
+                <img src="profilePic.png" alt="Profile Image">
+            </div>
+            
+            <div class="contact-info">
+                <p><strong>Name:</strong> Namburu Chaitanya Harshit</p>
+                <p><strong>Email:</strong> harshitnamburu007@gmail.com</p>
+                <p><strong>Phone:</strong> 8247454776</p>
+            </div>
+
+        </div>
+        
+        
+        <div class="section" id="about">
+            <h2>About</h2>
+            <p>Career Objective:<br>To be extraordinary in any form of activity, both as a professional and as an individual, by working in a challenging environment which will give me numerous opportunities to learn and grow and to make the organization a better place with my presence.</p>
+            
+            <h3>Academic Qualifications</h3>
+            <table>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Board</th>
+                    <th>CGPA/Percentage</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>B.Tech (CSE)</td>
+                    <td>Velagapudi Ramakrishna Siddhartha Engineering College</td>
+                    <td>Autonomous college affiliated to JNTUK, Kakinada</td>
+                    <td>9.29</td>
+                    <td>2020 - Present</td>
+                </tr>
+                <tr>
+                    <td>Intermediate</td>
+                    <td>Sarada Educational Institutions</td>
+                    <td>B.I.E, AP</td>
+                    <td>10</td>
+                    <td>2018 - 2020</td>
+                </tr>
+                <tr>
+                    <td>SSC</td>
+                    <td>Sri Telaprolu Bapanaiah English Medium High School</td>
+                    <td>B.S.E, AP</td>
+                    <td>9.5</td>
+                    <td>2017 - 2018</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section" id="skills">
+            <h2>Skills</h2>
+            <p>Programming Languages: C, Java, Python<br>
+                Web Basics: HTML, CSS, Javascript<br>
+            Trainings: E-box</p>
+        </div>
+        
+        <div class="section" id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Projects:</p>
+            <ul>
+                <li>Plastic Collection for Road Construction</li>
+                <li>Cardiovascular disease prediction using Boosting Algorithms in Machine Learning domain (In Progress)</li>
+            </ul>
+        </div>
+        
+        <div class="section" id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to get in touch with me:</p>
+            <p><strong>Email:</strong> harshitnamburu007@gmail.com</p>
+            <p><strong>Phone:</strong> 8247454776</p>
+        </div>
+    </div>
+    <div class="socials" align="center">
+        <a href="#"><img src="icon-facebook.svg" alt="facebook link"></a>
+        <a href="#"><img src="icon-instagram.svg" alt="instagram link"></a>
+        <a href="#"><img src="icon-twitter.svg" alt="twitter link"></a>
+    </div>
+</body>
+</html>
